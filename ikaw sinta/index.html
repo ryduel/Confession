@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papasa ba sayo?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'times new roman ', cursive;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #282A3A, #443C68, #393053, #18122B);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: rgba(6, 29, 56, 0.9);
+        }
+
+        .section {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+        .image-container {
+            flex: 0 0 calc(25% - 20px);
+            background: linear-gradient(to bottom, #FFE9D0, #FFFED3, #BBE9FF, #B1AFFF);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            filter: brightness(0.8);
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: color 0.3s ease;
+            color: #363636;
+        }
+
+        .image-container:hover .text {
+            color: #f8163c;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            font-family: 'Indie Flower', cursive;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .profile-circle {
+            width: 75px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(211, 104, 211, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgb(25, 31, 114);
+            margin-right: 20px;
+        }
+
+        .profile-circle img {
+            max-width: 170%;
+            max-height: 135%;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-circle:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f7418f;
+        }
+
+        /* Styles for different sections */
+        header, #about, #experience, #projects, #poems, #songs, footer {
+            background-color: #282A3A;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .image-container {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-container {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="section">
+        <div class="container">
+            <div class="title-container">
+                <div class="profile-circle">
+                    <img src="2.jpg" alt="Profile Picture">
+                </div>
+                <h1 class="title">Leonardo</h1>
+            </div>
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Perks</a></li>
+                    <li><a href="#projects">Efforts</a></li>
+                    <li><a href="#poems">Dedicated song</a></li>
+                    <li><a href="#songs">Confession Letter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Leonardo, 17 years old, currently Grade 12 this pasukan. There's nothing much about me naman pero I like to play instruments, draw, dance, code (halata naman), and I'm athletic din—badminton, bike, chess. I also play soccer type game for a club. Lastly, anything related to technicalities. I think ‘di ko masasabi everything right here kasi minsan nakakalimutan ko when I write stuff like this, so sorry na po agad. Taking photos, making film, editing is isa din sa favorite ko (I'm still working on it para mag-improve). Cooking is also one of my skills na gusto ko pa talagang mahasa, I'm learning to cook kasi i want to serve you a good meal, i learn cuz nagpapaturo ako or tinuturuan ako ni mother earth. Mahirap lang ako kaya I'm saying na out of league ako. I think that's all pero I'm sure rin na hindi.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Perks</h2>
+            <p>I'm an understanding person (to the point na uunahin ko palagi ang nararamdaman mo bago sa akin kasi strong person naman ako, sayo lang natitiklop). I'll do everything hanggang sa makakaya ko. I can cook for you, and math is also my favorite, so if you ever need help sa physics and calculus, I can probably teach you. basta madami pa, baka sabihin mo kasi anoh lang ako hanggang salita. KEME🛏️🛏️🛏️
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Efforts</h2>
+            <div class="image-container">
+                <img class="image" src="artwork1.jpg" alt="ganda mo">
+                <p class="text">Your photos aren't just pictures; they're art within art. Care to capture a coffee date with me next?</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="artwork2.jpg" alt="haha umisa pa">
+                <p class="text">Maikling tula</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="3.jpg" alt="3">
+                <p class="text">hehe</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="poems" class="section">
+        <div class="container">
+            <h2>Songs</h2>
+            <div class="image-container">
+                <img class="image" src="s1.jpg" alt="3">
+                <p class="text">Paninindigan kita oo,
+                    Mamahalin kitang buong buo</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="s2.jpg" alt="3">
+                <p class="text">Kay ganda mong pagmasdan
+                    Oh, sinta, napukaw mo
+                    Aking mata</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="s3.jpg" alt="3">
+                <p class="text">Kailangan bang aminin pa kung kita naman sa 'king, 
+                    Ginagawa ang ibig kong sabihin?</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="s4.jpg" alt="3">
+                <p class="text">Nahuhulog sa lupa ang puso ko,
+                    Nakatutunaw mga titig mo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="songs" class="section">
+        <div class="container">
+            <h2>Ka shy ih.</h2>
+            <div class="image-container">
+                <p class="text">Hi ma'am! Maybe you don't know me kasi Instagram lang tayo nag-iinteract (meron nga ba? HAHA just kidding). Pero I just want to say na I like you. At first, akala ko simpleng paghanga lang kaya tamang parinig lang ako, yes po ikaw lang yung nasa close friend ko sa Insta dahil para sa'yo 'yun lahat. Pero as days and weeks go by, nahuhulog na ako sa'yo. Ang kagandahan mo ay iba sa iba, my eyes already remember how beautiful you are kaya I like to make artworks, poems, and songs for you (I'm not obsessed ah? I admire you lang. Obsession is bad kaya 😤). Anyway, going back to my confession, I made this website just for you, to confess my feelings for you. Don't say it to others ah 😣 mawawala angas ko jk. I want to get to know you more, boss, it's your decision. If hindi, I'll admire you from afar. If pwede, kahit si sadness sasaya. That’s all boss, have a goodmornight! Maybe you will not expect this confession kaya take your time to read!!!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section">
+        <div class="container">
+            <p>&copy; Pasado naba ako boss?</p>
+        </div>
+    </footer>
+</body>
+</html>
